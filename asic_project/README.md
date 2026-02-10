@@ -1,4 +1,5 @@
 # Software-Based ASIC Design Using Verilog & Yosys
+  (MIHIKA ZODAPE)
 
 ## Overview
 This project demonstrates a complete software-based ASIC design flow, from RTL design to gate-level visualization.
