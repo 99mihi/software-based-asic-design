@@ -1,14 +1,19 @@
-module counter (
-    input clk,
-    input reset,
-    output reg [3:0] count
-);
+# Software-Based ASIC Design Using Verilog & Yosys
 
-always @(posedge clk or posedge reset) begin
-    if (reset)
-        count <= 4'b0000;
-    else
-        count <= count + 1;
-end
+## Overview
+This project demonstrates a complete ASIC-style design flow using software tools.
 
-endmodule
+## Tools Used
+- Verilog HDL
+- Yosys
+- Graphviz
+- Ubuntu (WSL)
+
+## Design Flow
+Verilog → RTL Synthesis → Gate-Level Netlist → Circuit Diagram
+
+## Output
+![Gate-Level Design](counter_design.png)
+
+## How to Run
+yosys -p "read_verilog counter.v; synth; show -format png -prefix counter_design"
